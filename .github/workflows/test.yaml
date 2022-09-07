@@ -18,13 +18,13 @@ jobs:
          import platform
          print (platform.processor())
        shell: python
-
-  # run-github-actions:
-  #   runs-on: ubuntu-latest
-  #   steps:
-  #    - name: List Files
-  #      run: |
-  #        pwd
-  #        ls
-  #    - name: Checkout
-  #      uses: actions/checkout@v1
+     - name: list files
+       run: |
+         pwd
+         ls
+     - name: checkout
+       uses: milicapajic98/github-actions@v1
+     - name: list files
+       run: |
+         pwd
+         ls
