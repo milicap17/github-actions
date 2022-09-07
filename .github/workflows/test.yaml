@@ -23,7 +23,7 @@ jobs:
          pwd
          ls
      - name: checkout
-       uses: milicapajic98/github-actions@v1
+       uses: milicapajic98/github-actions@v1.0.0
      - name: list files
        run: |
          pwd
