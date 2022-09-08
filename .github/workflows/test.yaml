@@ -22,9 +22,15 @@ jobs:
        run: |
          pwd
          ls
+         echo $GITHUB_SHA
+         echo $GITHUB_REPOSITORY
+         echo $GITHUB_WORKSPACE
+         echo "${{github.token}}"
+        # git clone https://github.com/milicapajic98/github-actions.git
+        # git checkout $GITHUB_SHA
      - name: checkout
        uses: actions/checkout@v1
      - name: list files after checkout 
        run: |
          pwd
-         ls -a
+         ls 
